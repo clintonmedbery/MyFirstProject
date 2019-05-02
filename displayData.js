@@ -7,10 +7,10 @@ const profitAndLoss = {
 }
 
 loadTable = () => {
-    var thing = profitAndLoss.revenue;
+    var revenueData = profitAndLoss.revenue;
     let data = "";
-    Object.keys(thing).forEach(function (key){
-        data += `<p>${capitalize(key)}: ${thing[key]}</p>`;
+    Object.keys(revenueData).forEach(function (key){
+        data += `<p>${capitalize(key)}: ${revenueData[key]}</p>`;
     });
     document.getElementById("data").innerHTML = data;
 }
